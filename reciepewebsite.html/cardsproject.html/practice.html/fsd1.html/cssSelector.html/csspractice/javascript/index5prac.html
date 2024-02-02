@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+            background-color: aquamarine;
+        }
+        li{
+        float: left; 
+    
+        }
+        li a,.dropbtn{
+         display: inline-block;
+         color:brown;
+         text-align: center;
+         padding: 12px 14px;
+         text-decoration: none;
+        }
+        li a:hover, .dropdown:hover .dropbtn {
+background-color: green;
+}
+
+    </style>
+
+
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li class="dropdown">
+    <a href="#" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+    </li>
+    </ul>
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>   
+</body>
+</html>

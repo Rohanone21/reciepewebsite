@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=2;
+        var y=3.14;
+        var z=4.24e-5;
+        document.write(x+"<br>");
+        document.write(y+"<br>");
+        document.write(z+"<br>");
+        var k = 10;
+ var l= 20;
+ var m = "30";
+ var n="Foo";
+ var o=0;
+ var p=(0.1*10+0.2*10)/10;
+ var q=9999999999999;
+ document.write(l+k+"<br>");
+ document.write(m+m+"<br>");
+ document.write(k+m+"<br>");
+ document.write(m+k+"<br>");
+ document.write(l+k+m+"<br>");
+ document.write(m-k+"<br>");
+ document.write(k*m+"<br>");
+ document.write(n-l+"<br>");
+ document.write(n-m+"<br>");
+ document.write(m/o+"<br>");
+ document.write(p+"<br>");
+ document.write(q+"<br>");
+ document.write(parseInt("30"+"<br>"));
+ document.write("<br>");
+  document.write(parseInt("50px"+"<br>"));
+  document.write("<br>");
+  document.write(parseInt("20 years"+"<br>"));
+  document.write("<br>");
+  document.write(parseInt("25666FT"+"<br>"));
+  document.write("<br>");
+  document.write((12).toString()+"<br>");
+  document.write((12).toString(2)+"<br>");
+  document.write((255).toString(16)+"<br>");
+  var r=10
+  var s=x.toString();
+ var t=67.1234;
+  document.write(typeof(s)+"<br>");
+  document.write(t.toExponential()+"<br>");
+  document.write(t.toExponential(2)+"<br>");
+  document.write(t.toExponential(4)+"<br>");
+var u=73.2456;
+document.write(u.toFixed(1)+"<br>");
+document.write(u.toFixed(4)+"<br>");
+document.write(u.toPrecision(4)+"<br>");
+var v=Number.MAX_VALUE;
+//document.write("<br>");
+document.write(v+"<br>");
+var w=Number.MIN_VALUE;
+document.write(w+"<br>");
+var vl=10;
+var vl2=20;
+document.write("<br>");
+    </script>
+    <script>
+        var vl1=10;
+var vl2=20;
+        if(vl1<vl2){
+document.write("HELLO");
+}
+else{
+    document.write("World");
+}
+document.write("<br>");
+var now=new Date();
+var DayOfWeek=now.getDay();
+if(DayOfWeek==0){
+    document.write("Have a nice day");
+}
+else{
+    document.write("good day");
+}
+document.write("<br>");
+
+var age=18
+if(age<18){
+document.write("child"+"<br>");
+}
+else if(age=>18&&age<=50){
+document.write("Teen OR adult"+"<br>")
+}
+else{
+document.write("Old"+"<br>");
+}
+document.write("<br>");
+var age=21
+var userType=age<18?'child':"adult";
+document.write(userType);
+var d=new Date();
+document.write("<br>")
+    
+switch(d.getDay()){
+case 0:
+document.write("Today is sunday");
+break;
+case 1:
+    documentl.write("Today is monday")
+    break;
+    case 2:
+    document.write("Today is tudesday")
+    break;
+    case 3:
+    document.write("Today is wednesday")
+    break;
+    case 4:
+    document.write("Today is thursday")
+    break;
+    case 5:
+    document.write("Today is friday")
+    break;
+    case 6:
+    document.write("Today is satrday")
+    break;
+    default:
+        document.write("None of the day are present")
+       break;
+    
+}
+document.write("<br>");
+var a=[10,20,30,40]
+for(i in a){
+document.write(a[i]+" ");
+}
+var colors = ["Red", "Green", "Blue"];
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+var cities = ["London", "Paris", "New York"];
+var person = ["John", "Wick", 32];
+document.write("<br>");
+document.write(colors + "<br>");
+document.write(fruits + "<br>");
+document.write(cities + "<br>");
+document.write(person);
+document.write("<br>");
+document.write(fruits[0]+"<br>");
+document.write(fruits[1]+"<br>");
+document.write(fruits[2]+"<br>");
+document.write(fruits[3]+"<br>");
+document.write(fruits[4]+"<br>");
+document.write(fruits[5]+"<br>");
+document.write(fruits.length+"<br>");
+document.write("<br>");
+var fruit= ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+for (var i=0;i<=fruit.length;i++){
+document.write(fruit[i]+" ")
+}
+document.write("<br>");
+document.write(typeof(fruits));
+document.write("<br>");
+fruit.push("guava","strawberry")
+document.write("<br>");
+fruit.unshift("Pomogrenate","custardApple");
+document.write("<br>");
+document.write(fruit+" ");
+document.write("<br>");
+document.write(fruit.length);
+document.write("<br>");
+var last=fruit.pop();
+document.write("<br>");
+document.write(last);
+document.write("<br>");
+document.write(fruit);
+var first=fruit.shift()
+document.write("<br>");
+document.write(fruit+" ");
+document.write("<br>");
+var colors=["Red","Green","Blue"];
+document.write(colors);
+document.write("<br>");
+var removed=colors.splice(0,1);
+document.write(removed+"<br>");
+document.write(colors);
+removed=colors.splice(1,1,"Pink","magenta");
+document.write(removed+"<br>");
+ </script>
+
+</body>
+</html>

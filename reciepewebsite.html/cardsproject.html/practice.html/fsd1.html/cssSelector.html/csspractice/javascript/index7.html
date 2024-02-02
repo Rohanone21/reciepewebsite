@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+</head>
+<style>
+button{
+background-color: green;
+border:none;
+color: white;
+padding: 20px 40px;
+text-align: center;
+text-decoration: none;
+display: inline;
+margin: 4px 5px;
+transition: background 2s;
+transition-duration: 1s;
+cursor: pointer;
+margin:5px;
+}
+.green-btn{
+background-color: white;
+color:black;
+border:2px solid black;
+}
+.green-btn:hover{
+background-color:red;
+color:black;
+}
+.blue-btn{
+    background-color: whitesmoke;
+    color:greenyellow;
+    border: 2px solid black;
+}
+.blue-btn:hover{
+    background-color: blueviolet;
+    color:yellowgreen  
+}
+.red-btn{
+    background-color:white;
+    color:burlywood;
+    border: 2px solid black;
+}
+.red-btn:hover{
+    background-color: rgb(226, 162, 43);
+    color:gray 
+}
+.gray-btn{
+    background-color: gray;
+    color:greenyellow;
+    border: 2px solid black;
+}
+.gray-btn:hover{
+    background-color: palevioletred;
+    color:yellowgreen  
+}
+.black-btn{
+    background-color: whitesmoke;
+    color:black;
+    border: 2px solid black;
+}
+.black-btn:hover{
+    background-color: orangered;
+    color:rgb(16, 15, 13);  
+}
+.button span{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 1s;
+}
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+.button:hover span{
+    padding-right: 0.5s;
+}
+button:hover span:after {
+opacity: 1;
+right: 0;
+}
+button:hover span:after {
+opacity: 1;
+right: 0;
+}
+.pagination li{
+display: inline-block;
+}
+.pagination li a{
+    color:black;
+    float: left;
+    padding:8px 16px;
+    text-decoration: none;
+    border:1px solid black;
+    border-radius: 10px;
+    
+}
+.pagination li a.active{
+background-color: green;
+color:white
+}
+.pagination li a:hover:not(.active) {background-color: #ddd;}
+h1{
+ color: purple;   
+}
+[title]{
+color: rgb(236, 13, 32);
+background-color: aqua;
+border: 2px solid black;
+}
+h1{
+color:rebeccapurple;
+border:2px solid black;
+background-color: yellow;
+}
+input[type="text"]{
+border: 2px solid black;
+}
+input[type="submit"]{
+    border:2px solid magenta;
+}
+[class~="warning"]{
+color:red;
+background-color:blueviolet;
+padding: 10px;
+}
+a[href^="https://"]{
+background-color:yellowgreen;
+padding: 20px;
+border-radius: 20px;
+margin: 10px;
+color: blue;
+text-decoration: underline;
+font-size: 18px;
+}
+p[lang|="en"]{
+    color:rebeccapurple;
+    padding: 10px;
+    background-color: grey;
+}
+p[class^="warning"]{
+    color:black;
+    background-color: orangered;
+}
+a[href$=".pdf"]{
+    color:black;
+    padding: 10px;
+    background-color: seagreen;  
+}
+.box{
+width: 200px;
+height: 150px;
+padding: 20px;
+background-color: greenyellow;
+border: 2px solid black;
+box-shadow: 10px 25px 5px red;
+}
+.box{
+    width: 200px;
+    height: 150px;
+    background-color: purple;
+    border: 2px solid black;
+    box-shadow: 20px 25px 2px rgb(183, 220, 49);
+}
+.box2{
+    width: 200px;
+    height: 150px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    box-shadow: 20px 25px 2px red; 
+}
+.box3{
+    width: 200px;
+    height: 150px;
+    background-color: grey;
+    border: 2px solid black;
+    box-shadow: 20px 25px 2px orchid;
+}
+h1{
+    text-shadow: 10px 20px 2px black;
+}
+h2{
+text-shadow: 10px 20px 4px black;
+}
+.square{
+    background:#00aa9d;
+    border-radius:20px;
+    height:150px;
+    margin:20px;
+    position: absolute;
+    transition: transform 0.8s;
+    width: 170px;
+    }
+    .square1{
+        background: #2b3f53;
+border-radius: 3px;
+height: 150px;
+margin: 100px;
+transition: transform 0.8s;
+position: absolute;
+width: 170px;
+box-shadow: violet;
+    }
+    .square2{
+        background: #2d550d;
+border-radius: 3px;
+height: 150px;
+margin: 100px;
+transition: transform 0.8s;
+position: absolute;
+width: 170px;
+color:violet
+
+    }
+    .square1:hover{
+    transform: translate(50px,50px);
+    box-shadow: 20px 30px 70px red;
+    transform: scale(2,2);
+    
+    }
+    .square:hover{
+    transform: translate(25px,25px);
+    box-shadow: 20px 30px 50px black;
+    transform:scale(2,2);
+    transform: rotate(-100deg);
+
+    }
+    .square2:hover{
+    transform: translate(25px,25px);
+    box-shadow: 20px 30px 50px black;
+    transform:scale(2,2);
+    transform: rotate(100deg);
+   transform: skew(70deg,70deg);
+    transform-origin:left bottom;
+
+    }
+    .square3{
+        background: #4d1251;
+border-radius: 3px;
+height: 150px;
+margin: 100px;
+transition: transform 0.8s;
+position: absolute;
+width: 170px;
+color:violet
+    }
+    .square3:hover{
+   transform:translate3d(25px,25px,50px);
+   transform: rotate3d(0,0,1,200deg);
+   transform: scale3d(1,20,0);
+   transform-style: ;
+    }
+    .square4{
+        background: #851010;
+border-radius: 3px;
+height: 150px;
+margin: 100px;
+transition: transform 0.8s;
+position: absolute;
+width: 170px;
+color:violet
+    }
+button:hover{
+background: red;
+}
+
+
+    
+</style>
+<body>
+    
+    <button class="green-btn">Green</button>
+    <button class="blue-btn">Blue</button>
+    <button class="red-btn">Red</button>
+    <button class="gray-btn">Gray</button>
+    <button class="black-btn">Black</button>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2>Button Styles</h2>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button> 
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Animated Button</h2>
+<button class="button" style="verticalalign:middle"><span>Hover </span></button>
+<br>
+<br>
+<br>
+<h2>Simple pagination</h2>
+<ul class="pagination">
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#">6</a></li>
+<li><a href="#">7</a></li>
+<li><a href="#">»</a></li>
+</ul>
+<br>
+<br>
+<h1>Sample Heading</h1>
+<h4 title="Heading">Attribute selector</h4>
+<p title="paragraph">Paragraph</p>
+<h1 title="nxtheading">Heading</h1>
+<br>
+<br>
+<form action="https://www.google.com">
+    <input type="text">
+    <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <p class="warning">The style will apply to this 
+        paragraph.</p>
+        <p class=" success warning">The style will also apply to this 
+        paragraph.</p>
+        <p class=" Success">The style will not apply to this 
+        paragraph.</p>
+        <br>
+        <br>
+        <p><a href="https://www.google.com" target="_blank">Google</a></p>
+        <br>
+        <br>
+       <p ><a href="https://www.google.com" target="_blank">google link</a></p>
+       <br>
+       <br>
+       <p lang="en">The style will apply to this paragraph.</p>
+<p lang="en-us">The style will also apply to this paragraph.</p>
+<p lang="us">The style will not apply to this paragraph.</p>
+<br>
+<br>
+<p class="warning">The style will apply to this paragraph.</p>
+<p class="warning">The style will also apply to this paragraph.</p>
+<p class="warning">The style will also apply to this paragraph.</p>
+<p class="warning">The style will also apply to this paragraph.</p>
+<p>The style will not apply to this paragraph.</p>
+<br>
+<br>
+<body>
+<p><a href="../demo/sample.pdf">Download PDF</a></p>
+<br>
+<br>
+<br>
+<div class="box">Shadow</div>
+<br>
+<br>
+<div class="box"></div><br> <br> 
+<div class="box1"></div><br><br>
+<div class="box2"></div><br><br>
+<div class="box3"></div>
+<br>
+<br>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<br>
+<br>
+<h4>2D</h4>
+<div class="square"></div>
+
+<div class="square1"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="square2"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>3D</h4>
+<div class="square4"></div>
+<div class="square3"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>Button</h4>
+<button type="button">Hover on me</button>
+</body>
+</html>

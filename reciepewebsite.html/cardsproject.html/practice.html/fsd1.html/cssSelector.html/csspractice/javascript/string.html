@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var myString='Hello World.';
+var mystring="Hello World";
+var str1="its ok \ to be good";
+var str2 = "He said \"Goodbye\"";
+var str3 = 'She replied \'Calm down, please\'';
+document.write(myString+"<br>");
+document.write(myString);
+document.write("<br>")
+document.write(str1+"<br>");
+document.write(str2+"<br>");
+document.write(str3);
+document.write("<br>");
+var str4="The quick brown fox \b  jumps over the lazy dog.";
+document.write(str4+"<br>");
+var str5 = "C:\Users\Downloads";
+document.write(str5 + "<br>");
+document.write(str5.length+"<br>") ;
+document.write(str2.length+"<br>") ;
+document.write(myString.length+"<br>") ;
+var mystrings="talent Battle Battle";
+var pos=mystrings.lastIndexOf("B")
+document.write(pos+"<br>");
+var mystrs="Talent Battle";
+var ps=mystrs.search("Battle");
+Document.write(ps+"<br>");
+</script>
+<script>
+    var snew="The quick brown fox jumps over the lazy dog.";
+var sbstr=snew.slice(4,15);
+document.write(sbstr+"<br>");
+document.write(snew.substring(9,0))
+document.write(snew.substring(31))
+document.write(snew.substring(-12,-13))
+document.write(snew.substring(77))
+document.write("<br>");
+document.write(snew.substr(4,15))
+var stris = "Color red looks brighter than color blue."
+var rpls=stris.replace("red","Blue");
+document.write("<br>");
+document.write(rpls);
+document.write("<br>");
+document.write(stris.toUpperCase())
+document.write("<br>");
+document.write(stris.toLowerCase())
+document.write("<br>");
+document.write(stris.toLocaleUpperCase())
+document.write("<br>");
+var a="Hello";
+var b="World!";
+var c=a+" "+b;
+document.write(c);
+document.write("<br>");
+var x="Talent";
+x+="Battle";
+document.write(x);
+document.write("<br>");
+document.write(snew.charAt(5));
+document.write("<br>");
+document.write(snew[snew.length-2]);
+document.write("<br>");
+var fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+var fruitsArr=fruitsStr.split(",");
+document.write(fruitsArr[0]+"<br>");
+document.write(fruitsArr[1]+"<br>");
+document.write(fruitsArr[fruitsArr.length-1]+"<br>");
+document.write("<br>");
+for (var i in fruitsArr){
+document.write("Fruits are represented as"+" "+fruitsArr[i]+"<br>")
+}
+var stress = "TALENTBATTLE";
+for(var i in stress){
+document.write("<br>"+" "+stress[i]);
+}
+
+
+</script>
+</body>
+</html>
